@@ -3,6 +3,15 @@
 # this script recive two arguments, first is sudo password (be carefull and delete last command in log) and the second one device ID
 # an example of use is:
 # sh conectar_altavoz.sh "MyPassword" "11:22:33:AA:BB:CC"
+#
+#
+# PREVIOUS CONFIGS
+#
+# Some config is need before launch script.
+# Source,Sink,Media,Socket must be enable in main config. You can add with
+# Source,Sink,Media,Socket
+# sudo sh -c "echo 'Enable=Source,Sink,Media,Socket' >> /etc/bluetooth/main.conf"
+
 
 VAR1="$(tmux list-sessions | grep "ConnectBluetooth" | wc -l)"
 
