@@ -23,3 +23,7 @@ export EDITOR="$VISUAL"
 alias gch="git checkout"
 alias gp="git push origin"
 alias fto="cd ~/dev_projects/FTO"
+
+# asdf-vm
+. /home/greg/.asdf/asdf.sh
+. /home/greg/.asdf/completions/asdf.bash
